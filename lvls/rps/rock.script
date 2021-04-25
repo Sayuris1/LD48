@@ -1,0 +1,8 @@
+function on_message(self, message_id, message, sender)
+	if message_id == cursor.OVER then
+		sound.play("#sound")
+		msg.post("@render:", "clear_color", { color = vmath.vector4(0, 0, 0, 0) } )
+	elseif message_id == cursor.PRESSED then
+		msg.post("/select#rps", "select", {1})
+	end
+end

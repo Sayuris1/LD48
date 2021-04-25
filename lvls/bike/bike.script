@@ -1,0 +1,33 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+
+	go.animate("/hurdles", "position.x", go.PLAYBACK_ONCE_FORWARD, -7000, go.EASING_LINEAR, 20)
+
+	self.isJumping = false
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == lib.hashed("trigger_response") then
+		if message.other_group == lib.hashed("win") then
+			msg.post("/timer#timer", lib.hashed("win"))
+		else
+			sound.play("#sound1")
+			go.delete()
+		end
+	end
+end
+
+function on_input(self, action_id, action)
+	if action_id == lib.hashed("touch") and not self.isJumping then
+		self.isJumping = true
+		sound.play("#sound")
+
+		go.animate(".", "position.y", go.PLAYBACK_ONCE_FORWARD, 130, go.EASING_LINEAR, 0.3, 0, function ()
+			timer.delay(0.5, false, function ()
+				go.animate(".", "position.y", go.PLAYBACK_ONCE_FORWARD, 0, go.EASING_LINEAR, 0.3, 0, function ()
+					self.isJumping = false
+				end)
+			end)
+		end)
+	end
+end

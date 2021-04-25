@@ -1,0 +1,69 @@
+-- GLOBALS
+lib = require "modules.general"
+cursor = require "in.cursor"
+
+function init(self)
+    math.randomseed(os.clock())
+
+    msg.post("/balloon", "acquire_input_focus")
+    msg.post("/sheep", "acquire_input_focus")
+    msg.post("/rps", "acquire_input_focus")
+    msg.post("/rhythm", "acquire_input_focus")
+    msg.post("/trash", "acquire_input_focus")
+    msg.post("/bike", "acquire_input_focus")
+    msg.post("/win", "acquire_input_focus")
+    msg.post("/lose", "acquire_input_focus")
+    msg.post("/start", "acquire_input_focus")
+    msg.post("/end", "acquire_input_focus")
+
+    self.current = "/start#start"
+    self.currentLvl = 0
+
+	msg.post(self.current, "load")
+
+    self.lvls = {"/trash#trash", "/balloon#balloon", "/bike#bike", "/rhythm#rhythm", "/rps#rps", "/sheep#sheep"}
+    self.loses = {}
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == lib.hashed("proxy_loaded") then
+        msg.post(sender, "enable")
+    elseif message_id == lib.hashed("proxy_unloaded") then
+        msg.post(self.current, "load")
+    elseif message_id == lib.hashed("lose") then
+        msg.post(self.current, "disable")
+        msg.post(self.current, "final")
+        msg.post(self.current, "unload")
+
+        self.loses[#self.loses + 1] = self.current
+
+        self.current = "/lose#lose"
+    elseif message_id == lib.hashed("win") then
+        msg.post(self.current, "disable")
+        msg.post(self.current, "final")
+        msg.post(self.current, "unload")
+
+        self.current = "/win#win"
+    elseif message_id == lib.hashed("next") then
+        msg.post(self.current, "disable")
+        msg.post(self.current, "final")
+        msg.post(self.current, "unload")
+
+        self.currentLvl = self.currentLvl + 1
+
+        if self.currentLvl <= #self.lvls then
+            self.current = self.lvls[self.currentLvl]
+        elseif #self.loses ~= 0 then
+            self.lvls = {}
+            for index, value in ipairs(self.loses) do
+                self.lvls[index] = value
+            end
+            self.loses = {}
+
+            self.currentLvl = 1
+            self.current = self.lvls[1]
+        else
+            self.current = "/end#end"
+        end
+	end
+end

@@ -1,0 +1,21 @@
+function init(self)
+	self.color = 1
+	self.once = true
+
+	sound.play("#sound")
+end
+
+function update(self, dt)
+	self.color = self.color - dt / 3
+	if self.color >= 0 then
+		msg.post("@render:", "clear_color", { color = vmath.vector4(self.color, self.color, self.color, 0) } )
+	elseif self.color >= -0.5 then
+		msg.post("@render:", "clear_color", { color = vmath.vector4(0, 0.6, 0, 0) } )
+		if self.once then
+			self.once = false
+			sound.play("#sound1")
+		end
+	else
+		msg.post("main:/proxies#loader", lib.hashed("next"))
+	end
+end

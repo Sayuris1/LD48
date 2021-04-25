@@ -1,0 +1,73 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+
+	self.rgba = vmath.vector4(0, 0, 0, 0)
+
+	self.a = true
+	self.s = true
+	self.d = true
+	self.space = true
+	self.shift = true
+
+	msg.post("/timer#timer", lib.hashed("win"))
+end
+
+function update(self, dt)
+	msg.post("@render:", "clear_color", { color = self.rgba } )
+	self.rgba.x = math.max(self.rgba.x - (dt / 8), 0)
+	self.rgba.y = math.max(self.rgba.y - (dt / 8), 0)
+	self.rgba.z = math.max(self.rgba.z - (dt / 8), 0)
+end
+
+function on_input(self, action_id, action)
+	if action.pressed then
+		if action_id == lib.hashed("a") then
+			sound.play("#sound")
+			if self.a then
+				self.a = false
+				go.animate("#label1", "color", go.PLAYBACK_ONCE_PINGPONG, vmath.vector4(1, 0, 0, 1), go.EASING_LINEAR, 1, 0, function ()
+					self.a = true
+				end)
+			end
+			self.rgba.x = math.min(self.rgba.x + 0.1, 1)
+		elseif action_id == lib.hashed("s") then
+			if self.s then
+				self.s = false
+				go.animate("#label2", "color", go.PLAYBACK_ONCE_PINGPONG, vmath.vector4(0, 1, 0, 1), go.EASING_LINEAR, 1, 0, function ()
+					self.s = true
+				end)
+			end
+			sound.play("#sound1")
+			self.rgba.y = math.min(self.rgba.y + 0.1, 1)
+		elseif action_id == lib.hashed("d") then
+			if self.d then
+				self.d = false
+				go.animate("#label3", "color", go.PLAYBACK_ONCE_PINGPONG, vmath.vector4(0, 0, 1, 1), go.EASING_LINEAR, 1, 0, function ()
+					self.d = true
+				end)
+			end
+			sound.play("#sound2")
+			self.rgba.z = math.min(self.rgba.z + 0.1, 1)
+		elseif action_id == lib.hashed("space") then
+			if self.space then
+					self.space = false
+				go.animate("#label5", "color", go.PLAYBACK_ONCE_PINGPONG, vmath.vector4(1, 0, 1, 1), go.EASING_LINEAR, 1, 0, function ()
+					self.space = true
+				end)
+			end
+			sound.play("#sound3")
+			self.rgba.z = math.min(self.rgba.z + 0.05, 1)
+			self.rgba.x = math.min(self.rgba.x + 0.05, 1)
+		elseif action_id == lib.hashed("shift") then
+			if self.shift then
+					self.shift = false
+				go.animate("#label4", "color", go.PLAYBACK_ONCE_PINGPONG, vmath.vector4(1, 1, 0, 1), go.EASING_LINEAR, 1, 0, function ()
+					self.shift = true
+				end)
+			end
+			self.rgba.y = math.min(self.rgba.y + 0.05, 1)
+			self.rgba.x = math.min(self.rgba.x + 0.05, 1)
+			sound.play("#sound4")
+		end
+	end
+end

@@ -1,0 +1,20 @@
+function init(self)
+	msg.post("@render:", "clear_color", { color = vmath.vector4(0, 0, 0, 0) } )
+
+	go.animate("/bg", "position.x", go.PLAYBACK_LOOP_PINGPONG, -2000, go.EASING_LINEAR, 40)
+	timer.delay(0.1, true, function ()
+		for i = 1, 18, 1 do
+			for n = 1, 15, 1 do
+				go.set("/bg" .. i .. "#sprite" .. n, "tint", vmath.vector4(math.random(), math.random(), math.random(), 0.5))
+			end
+		end
+	end)
+
+
+	go.animate("/label", "position.x", go.PLAYBACK_ONCE_FORWARD, -800, go.EASING_LINEAR, 4)
+	go.animate("/label1", "position.x", go.PLAYBACK_ONCE_FORWARD, -800, go.EASING_LINEAR, 5)
+	timer.delay(0.1, true, function ()
+		go.set("/label#label", "color", vmath.vector4(math.random(), math.random(), math.random(), 0.8))
+		go.set("/label1#label", "color", vmath.vector4(math.random(), math.random(), math.random(), 0.8))
+	end)
+end

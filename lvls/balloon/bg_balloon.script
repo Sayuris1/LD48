@@ -1,0 +1,52 @@
+function init(self)
+	msg.post("@render:", "clear_color", { color = vmath.vector4(0, 0, 0, 0) } )
+	self.time = 0
+	self.count = 0
+	self.count2 = 0
+
+	msg.post("/bg#label2", "disable")
+
+	sound.play("#sound")
+	timer.delay(1.5, false, function ()
+		sound.stop("#sound")
+	end)
+
+	self.once = true
+end
+
+function update(self, dt)
+	self.time = self.time + dt
+	if self.count < 5 then
+		if self.time >= 0.15 and self.time <= 0.3 then
+			go.set("/bg#label", "color", vmath.vector4(0.2, 0.1, 0.5, 0.8))
+			go.set("/bg#label1", "color", vmath.vector4(0.9, 0.6, 1, 0.7))
+		elseif self.time >= 0.3 then
+			self.time = 0
+			self.count = self.count + 1
+
+			go.set("/bg#label1", "color", vmath.vector4(0.2, 0.1, 0.5, 0.8))
+			go.set("/bg#label", "color", vmath.vector4(0.9, 0.6, 1, 0.7))
+		end
+	else
+		msg.post("/bg#label", "disable")
+		msg.post("/bg#label1", "disable")
+
+		msg.post("/bg#label2", "enable")
+		if self.once then
+			sound.play("#sound1")
+			self.once = false
+		end
+
+		if self.time >= 0.15 and self.time <= 0.3 then
+			go.set("/bg#label2", "color", vmath.vector4(0, 0.5, 0, 1))
+		elseif self.time >= 0.3 then
+			self.time = 0
+			self.count2 = self.count2 + 1
+			go.set("/bg#label2", "color", vmath.vector4(0, 0.5, 0, 0))
+		end
+
+		if self.count2 >= 5 then
+			msg.post("/bg#label2", "disable")
+		end
+	end
+end

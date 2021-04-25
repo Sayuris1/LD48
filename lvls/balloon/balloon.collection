@@ -1,0 +1,1507 @@
+name: "balloon"
+instances {
+  id: "camera"
+  prototype: "/orthographic/camera.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "balloon"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 0.0
+    y: -412.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "timer"
+  prototype: "/timer/timer.go"
+  position {
+    x: 409.0
+    y: 387.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "balloon1"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 173.0
+    y: -531.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon2"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -227.0
+    y: -458.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon3"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -54.0
+    y: -577.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon4"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -230.0
+    y: -603.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon5"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 193.0
+    y: -730.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon6"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 36.0
+    y: -764.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon7"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -90.0
+    y: -787.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon8"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -271.0
+    y: -784.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon9"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -403.0
+    y: -892.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon10"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -184.0
+    y: -954.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon11"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -3.0
+    y: -964.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon12"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 129.0
+    y: -943.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon13"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 299.0
+    y: -884.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon14"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -439.0
+    y: -729.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon15"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -411.0
+    y: -572.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon16"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -393.0
+    y: -391.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon17"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 190.0
+    y: -388.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon18"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 311.0
+    y: -522.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon19"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 332.0
+    y: -672.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon20"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -21.0
+    y: -1540.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon21"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -403.0
+    y: -1589.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon22"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -104.0
+    y: -1540.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon23"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 17.0
+    y: -1674.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon24"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 38.0
+    y: -1824.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon25"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -225.0
+    y: -1770.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon26"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 9.0
+    y: -1377.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon27"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 120.0
+    y: -605.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon28"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -143.0
+    y: -551.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon29"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -331.0
+    y: -817.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon30"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -226.0
+    y: -851.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon31"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -105.0
+    y: -985.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon32"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -84.0
+    y: -1135.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon33"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -347.0
+    y: -1081.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon34"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 36.0
+    y: -912.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon35"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 141.0
+    y: -946.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon36"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 262.0
+    y: -1080.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon37"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 283.0
+    y: -1230.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon38"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 20.0
+    y: -1176.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon39"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -89.0
+    y: -1062.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon40"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 16.0
+    y: -1096.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon41"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 137.0
+    y: -1230.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon42"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 158.0
+    y: -1380.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon43"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -105.0
+    y: -1326.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon44"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -344.0
+    y: -1077.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon45"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -239.0
+    y: -1111.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon46"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -118.0
+    y: -1245.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon47"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -97.0
+    y: -1395.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon48"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -360.0
+    y: -1341.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon49"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 275.0
+    y: -1659.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon50"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: -107.0
+    y: -1708.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon51"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 192.0
+    y: -1659.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon52"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 313.0
+    y: -1793.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon53"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 334.0
+    y: -1943.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon54"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 71.0
+    y: -1889.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+instances {
+  id: "balloon55"
+  prototype: "/lvls/balloon/balloon/balloon.go"
+  position {
+    x: 305.0
+    y: -1496.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 5.0
+    y: 5.0
+    z: 5.0
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "cursor"
+  data: "components {\n"
+  "  id: \"cursor\"\n"
+  "  component: \"/in/cursor.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"drag\"\n"
+  "    value: \"false\"\n"
+  "    type: PROPERTY_TYPE_BOOLEAN\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"cursorUpdate\"\n"
+  "  component: \"/main/cursorUpdate.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"cursorTrigger\"\n"
+  "  type: \"collisionobject\"\n"
+  "  data: \"collision_shape: \\\"\\\"\\n"
+  "type: COLLISION_OBJECT_TYPE_TRIGGER\\n"
+  "mass: 0.0\\n"
+  "friction: 0.1\\n"
+  "restitution: 0.5\\n"
+  "group: \\\"cursor\\\"\\n"
+  "mask: \\\"go\\\"\\n"
+  "embedded_collision_shape {\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 0\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  data: 0.5\\n"
+  "  data: 0.5\\n"
+  "  data: 0.5\\n"
+  "}\\n"
+  "linear_damping: 0.0\\n"
+  "angular_damping: 0.0\\n"
+  "locked_rotation: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "bg"
+  data: "components {\n"
+  "  id: \"bg_balloon\"\n"
+  "  component: \"/lvls/balloon/bg_balloon.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"label\"\n"
+  "  type: \"label\"\n"
+  "  data: \"size {\\n"
+  "  x: 128.0\\n"
+  "  y: 32.0\\n"
+  "  z: 0.0\\n"
+  "  w: 0.0\\n"
+  "}\\n"
+  "scale {\\n"
+  "  x: 1.0\\n"
+  "  y: 1.0\\n"
+  "  z: 1.0\\n"
+  "  w: 0.0\\n"
+  "}\\n"
+  "color {\\n"
+  "  x: 0.89834726\\n"
+  "  y: 0.6352459\\n"
+  "  z: 1.0\\n"
+  "  w: 0.7058824\\n"
+  "}\\n"
+  "outline {\\n"
+  "  x: 0.0\\n"
+  "  y: 0.0\\n"
+  "  z: 0.0\\n"
+  "  w: 1.0\\n"
+  "}\\n"
+  "shadow {\\n"
+  "  x: 0.0\\n"
+  "  y: 0.0\\n"
+  "  z: 0.0\\n"
+  "  w: 1.0\\n"
+  "}\\n"
+  "leading: 1.0\\n"
+  "tracking: 0.0\\n"
+  "pivot: PIVOT_CENTER\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "line_break: false\\n"
+  "text: \\\"Click to POP\\\"\\n"
+  "font: \\\"/assets/font/pixeled.font\\\"\\n"
+  "material: \\\"/builtins/fonts/label.material\\\"\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 9.6\n"
+  "    y: 10.8\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: -0.043619387\n"
+  "    w: 0.99904823\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"label1\"\n"
+  "  type: \"label\"\n"
+  "  data: \"size {\\n"
+  "  x: 128.0\\n"
+  "  y: 32.0\\n"
+  "  z: 0.0\\n"
+  "  w: 0.0\\n"
+  "}\\n"
+  "scale {\\n"
+  "  x: 1.0\\n"
+  "  y: 1.0\\n"
+  "  z: 1.0\\n"
+  "  w: 0.0\\n"
+  "}\\n"
+  "color {\\n"
+  "  x: 0.2\\n"
+  "  y: 0.101960786\\n"
+  "  z: 0.5019608\\n"
+  "  w: 0.8\\n"
+  "}\\n"
+  "outline {\\n"
+  "  x: 0.0\\n"
+  "  y: 0.0\\n"
+  "  z: 0.0\\n"
+  "  w: 1.0\\n"
+  "}\\n"
+  "shadow {\\n"
+  "  x: 0.0\\n"
+  "  y: 0.0\\n"
+  "  z: 0.0\\n"
+  "  w: 1.0\\n"
+  "}\\n"
+  "leading: 1.0\\n"
+  "tracking: 0.0\\n"
+  "pivot: PIVOT_CENTER\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "line_break: false\\n"
+  "text: \\\"Click to POP\\\"\\n"
+  "font: \\\"/assets/font/pixeled.font\\\"\\n"
+  "material: \\\"/builtins/fonts/label.material\\\"\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"label2\"\n"
+  "  type: \"label\"\n"
+  "  data: \"size {\\n"
+  "  x: 128.0\\n"
+  "  y: 32.0\\n"
+  "  z: 0.0\\n"
+  "  w: 0.0\\n"
+  "}\\n"
+  "scale {\\n"
+  "  x: 1.0\\n"
+  "  y: 1.0\\n"
+  "  z: 1.0\\n"
+  "  w: 0.0\\n"
+  "}\\n"
+  "color {\\n"
+  "  x: 0.0\\n"
+  "  y: 0.5019608\\n"
+  "  z: 0.0\\n"
+  "  w: 1.0\\n"
+  "}\\n"
+  "outline {\\n"
+  "  x: 0.0\\n"
+  "  y: 0.0\\n"
+  "  z: 0.0\\n"
+  "  w: 1.0\\n"
+  "}\\n"
+  "shadow {\\n"
+  "  x: 0.0\\n"
+  "  y: 0.0\\n"
+  "  z: 0.0\\n"
+  "  w: 1.0\\n"
+  "}\\n"
+  "leading: 1.0\\n"
+  "tracking: 0.0\\n"
+  "pivot: PIVOT_CENTER\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "line_break: false\\n"
+  "text: \\\"START!!\\\"\\n"
+  "font: \\\"/assets/font/pixeled.font\\\"\\n"
+  "material: \\\"/builtins/fonts/label.material\\\"\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sound\"\n"
+  "  type: \"sound\"\n"
+  "  data: \"sound: \\\"/assets/sounds/clicktopop.wav\\\"\\n"
+  "looping: 1\\n"
+  "group: \\\"master\\\"\\n"
+  "gain: 1.0\\n"
+  "pan: 0.0\\n"
+  "speed: 1.0\\n"
+  "loopcount: 0\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sound1\"\n"
+  "  type: \"sound\"\n"
+  "  data: \"sound: \\\"/assets/sounds/start.wav\\\"\\n"
+  "looping: 0\\n"
+  "group: \\\"master\\\"\\n"
+  "gain: 0.2\\n"
+  "pan: 0.0\\n"
+  "speed: 1.0\\n"
+  "loopcount: 0\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 2.0
+    y: 2.0
+    z: 2.0
+  }
+}

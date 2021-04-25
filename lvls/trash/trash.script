@@ -1,0 +1,34 @@
+local trashed = 0
+
+function init(self)
+	msg.post("#trigger", "disable")
+
+	self.drag = false
+	self.play = true
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == cursor.OVER then
+		msg.post("#trigger", "enable")
+		msg.post("#dynamic", "disable")
+		sound.play("#sound")
+	elseif not self.drag and message_id == cursor.OUT then
+		msg.post("#dynamic", "enable")
+		msg.post("#trigger", "disable")
+	elseif message_id == cursor.DRAG_START then
+		self.drag = true
+	elseif message_id == cursor.DRAG_END then
+	msg.post("#dynamic", "enable")
+		msg.post("#trigger", "disable")
+		self.drag = false
+	elseif message_id == lib.hashed("trigger_response") then
+		if message.other_group == lib.hashed("go") then
+			trashed = trashed + 1
+			if trashed == 7 then
+				msg.post("/timer#timer", lib.hashed("win"))
+			end
+			sound.play("#sound1")
+			go.delete()
+		end
+	end
+end

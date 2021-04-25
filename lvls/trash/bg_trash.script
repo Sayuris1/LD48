@@ -1,0 +1,31 @@
+function init(self)
+	msg.post("@render:", "clear_color", { color = vmath.vector4(0.5255, 0.5255, 0.5255, 0) } )
+
+	go.animate("/bg1", "position.x", go.PLAYBACK_ONCE_FORWARD, -303, go.EASING_LINEAR, 8, 0, function ()
+		go.animate("/bg1", "position.x", go.PLAYBACK_LOOP_PINGPONG, -348, go.EASING_LINEAR, 20)
+	end)
+
+	go.animate("/bg2", "position.x", go.PLAYBACK_ONCE_FORWARD, -303, go.EASING_LINEAR, 7, 0, function ()
+		go.animate("/bg2", "position.x", go.PLAYBACK_LOOP_PINGPONG, -348, go.EASING_LINEAR, 25)
+	end)
+
+	go.animate("/bg3", "position.x", go.PLAYBACK_ONCE_FORWARD, -303, go.EASING_LINEAR, 6, 0, function ()
+		go.animate("/bg3", "position.x", go.PLAYBACK_LOOP_PINGPONG, -348, go.EASING_LINEAR, 30)
+	end)
+
+	go.animate("/bg4", "position.x", go.PLAYBACK_ONCE_FORWARD, -303, go.EASING_LINEAR, 5, 0, function ()
+		go.animate("/bg4", "position.x", go.PLAYBACK_LOOP_PINGPONG, -348, go.EASING_LINEAR, 10)
+	end)
+
+	go.animate("/bg5", "position.x", go.PLAYBACK_ONCE_FORWARD, -303, go.EASING_LINEAR, 4, 0, function ()
+		go.animate("/bg5", "position.x", go.PLAYBACK_LOOP_PINGPONG, -348, go.EASING_LINEAR, 5)
+	end)
+
+	go.animate("/bg6", "position.x", go.PLAYBACK_ONCE_FORWARD, -303, go.EASING_LINEAR, 3, 0, function ()
+		go.animate("/bg6", "position.x", go.PLAYBACK_LOOP_PINGPONG, -348, go.EASING_LINEAR, 15)
+	end)
+
+	go.animate("/bg7", "position.x", go.PLAYBACK_ONCE_FORWARD, -303, go.EASING_LINEAR, 2, 0, function ()
+		go.animate("/bg7", "position.x", go.PLAYBACK_LOOP_PINGPONG, -348, go.EASING_LINEAR, 8)
+	end)
+end

@@ -1,0 +1,51 @@
+local types = {[1] = {pos = vmath.vector3(-550, 245, 0), target = vmath.vector3(-550, -210, 0), freq = 0.5, amp = 450},
+			   [2] = {pos = vmath.vector3(-340, 375, 0), target = vmath.vector3(280, 375, 0), freq = -0.5, amp = 250},
+			   [3] = {pos = vmath.vector3(545, 190, 0), target = vmath.vector3(545, -225, 0), freq = -0.5, amp = 300},
+			   [4] = {pos = vmath.vector3(135, -425, 0), target = vmath.vector3(135, 135, 0)}}
+			   
+local times = {[1] = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18},
+			   [2] = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18},
+			   [3] = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18},
+			   [4] = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18},}
+
+local function sine_movement(target, speed, frequency, amplitude)
+	local position = go.get_position()
+	local total_distance = vmath.length(target - position)
+	local distance_to_target = total_distance
+	local direction = vmath.normalize(target - position)
+	local ortho_dir = vmath.rotate(vmath.quat_rotation_z(math.rad(90)), direction)
+	return function(dt)
+		local distance_to_travel = math.min(distance_to_target, speed * dt)
+		if distance_to_travel > 0 then
+			distance_to_target = distance_to_target - distance_to_travel
+			local sine = math.sin(2 * math.pi * distance_to_target * frequency / total_distance) * amplitude
+			position = position + direction * distance_to_travel
+			go.set_position(position + ortho_dir * sine)
+		end
+	end
+end
+
+function init(self)
+	self.type = math.random(1, 4)
+	go.set_position(types[self.type].pos)
+
+	local delay = times[self.type][math.random(1, #times[self.type])]
+	lib.Shift(times[self.type], delay, false)
+
+	timer.delay(delay + (math.random(1,2) / 2), false, function ()
+		if self.type == 4 then
+			go.animate(".", "position", go.PLAYBACK_ONCE_PINGPONG, types[self.type].target, go.EASING_OUTQUAD, 1, 0, function ()
+				go.delete()
+			end)
+		else
+			self.sin = true
+			self.move = sine_movement(types[self.type].target, 300, types[self.type].freq, types[self.type].amp)
+		end
+	end)
+end
+
+function update(self, dt)
+	if self.sin then
+		self.move(dt)
+	end
+end

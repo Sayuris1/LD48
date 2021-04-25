@@ -1,0 +1,35 @@
+function init(self)
+	self.time = 20.0
+	self.win = false
+
+	self.sound = true
+end
+
+function update(self, dt)
+	self.time = self.time - dt
+	label.set_text("#label", string.format("%.1f", self.time))
+
+	if self.time <= 0 then
+		if self.win then
+			self.win = false
+			msg.post("main:/proxies#loader", lib.hashed("win"))
+		else
+			msg.post("main:/proxies#loader", lib.hashed("lose"))
+		end
+	end
+	if self.time % 0.5 <= 0.02 then
+		if self.sound then
+			self.sound = false
+			sound.play("#sound")
+		else
+			self.sound = true
+			sound.play("#sound1")
+		end
+	end
+end
+
+function on_message(self, message_id, message)
+	if message_id == lib.hashed("win") then
+		self.win = true
+	end
+end
